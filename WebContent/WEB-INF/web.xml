@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>twitter</display-name>
+	
+	<session-config>
+   <session-timeout>30</session-timeout> 
+</session-config>
+	
+	<servlet>
+		<description>
+		</description>
+		<display-name>loginservlet</display-name>
+		<servlet-name>loginservlet</servlet-name>
+		<servlet-class>
+		twitter.loginservlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<description>
+		</description>
+		<display-name>profile</display-name>
+		<servlet-name>profile</servlet-name>
+		<servlet-class>
+		twitter.profile</servlet-class>
+	</servlet>
+		
+	<servlet>
+		<description>
+		</description>
+		<display-name>tweet</display-name>
+		<servlet-name>tweet</servlet-name>
+		<servlet-class>
+		twitter.tweet</servlet-class>
+	</servlet>
+
+			
+
+	<servlet>
+		<description>
+		</description>
+		<display-name>register</display-name>
+		<servlet-name>register</servlet-name>
+		<servlet-class>Signup.register</servlet-class>
+	</servlet>
+
+	<servlet>
+		<description>
+		</description>
+		<display-name>editproservlet</display-name>
+		<servlet-name>editproservlet</servlet-name>
+		<servlet-class>
+		Editprofile.editproservlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<description>
+		</description>
+		<display-name>editemail</display-name>
+		<servlet-name>editemail</servlet-name>
+		<servlet-class>
+		Editprofile.editemail</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<description>
+		</description>
+		<display-name>editcountry</display-name>
+		<servlet-name>editcountry</servlet-name>
+		<servlet-class>
+		Editprofile.editcountry</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>editpassword</display-name>
+		<servlet-name>editpassword</servlet-name>
+		<servlet-class>
+		Editprofile.editpassword</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<description>
+		</description>
+		<display-name>unfollow</display-name>
+		<servlet-name>unfollow</servlet-name>
+		<servlet-class>
+		follow.unfollow</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<description>
+		</description>
+		<display-name>followServlet</display-name>
+		<servlet-name>followServlet</servlet-name>
+		<servlet-class>
+		follow.followServlet</servlet-class>
+	</servlet>
+
+	
+	<servlet-mapping>
+		<servlet-name>loginservlet</servlet-name>
+		<url-pattern>/loginservlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>profile</servlet-name>
+		<url-pattern>/profile</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet-mapping>
+		<servlet-name>tweet</servlet-name>
+		<url-pattern>/tweet</url-pattern>
+	</servlet-mapping>
+	
+
+	<servlet-mapping>
+		<servlet-name>register</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>editproservlet</servlet-name>
+		<url-pattern>/editproservlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>editemail</servlet-name>
+		<url-pattern>/editemail</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>editcountry</servlet-name>
+		<url-pattern>/editcountry</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>editpassword</servlet-name>
+		<url-pattern>/editpassword</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>unfollow</servlet-name>
+		<url-pattern>/unfollow</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>followServlet</servlet-name>
+		<url-pattern>/followServlet</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+		 
+	</welcome-file-list>
+</web-app>
